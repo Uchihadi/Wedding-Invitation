@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import './index.css'
-import { FaBluetoothB } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaRegCalendarCheck } from "react-icons/fa6";
+import { FaShareNodes } from "react-icons/fa6";
+
 function App() {
   return (
     <>
@@ -113,16 +116,16 @@ function App() {
       <div className="section_wrap wrap">
         <div className="section_container_map">
           <button className="map_list">
-            <span className="material-symbols-outlined"> <FaBluetoothB/> </span>
+            <span className="material-symbols-outlined"> <FaLocationDot/> </span>
             Wedding Location
           </button>
           <button className="map_list">
-            <span className="material-symbols-outlined"> calendar_month </span>
-            Save to Calendar
+            <span className="material-symbols-outlined"> <FaRegCalendarCheck/> </span>
+            Save The Calendar
           </button>
           <button className="map_list">
-            <span className="material-symbols-outlined"> share </span>
-            Share Instagram
+            <span className="material-symbols-outlined"> <FaShareNodes/> </span>
+            Share On Instagram
           </button>
         </div>
         <section className="map_img">
