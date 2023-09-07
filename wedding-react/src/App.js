@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import './index.css'
+import './index.css';
+import Navbar from './Navbar';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import { FaShareNodes } from "react-icons/fa6";
@@ -9,20 +10,7 @@ function App() {
   return (
     <>
     <body>
-      {/* NAVBAR */}
-      <nav className="navbar">
-      <div className="navbar_wrapper">
-        <h1 className="brand">Nurhadi & Nurdiyahnah</h1>
-        <menu className="navbar_menu">
-          <a href="#akad">Solemnisation</a>
-          <a href="#resepsi">Reception</a>
-          <a href="#buku_tamu ">Guestbook</a>
-          <a href="#map">Map</a>
-          <a href="#gallery">Gallery</a>
-        </menu>
-      </div>
-      </nav>
-
+      <Navbar/>
       {/* TITLE */}
       <div className="hero">
         <h2>The Wedding Of</h2>
