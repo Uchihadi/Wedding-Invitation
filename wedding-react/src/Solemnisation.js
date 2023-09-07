@@ -13,7 +13,7 @@ function Solemnisation () {
           <h3>Saturday, 23 December 2023</h3>
           <h3>Time: 1100</h3>
           <h4>Bijan B'Majestic, Grandlink Square, 511 Guillemard Road</h4>
-          <h4>Singapore</h4>
+          {/* <h4>Singapore</h4> */}
         </div>
         <section className="akad_img"></section>
       </div>
