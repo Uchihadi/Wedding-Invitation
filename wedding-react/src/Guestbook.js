@@ -18,7 +18,7 @@ function Guestbook () {
             rows="8"
           ></textarea>
           <select name="kehadiran">
-            <option value="hadir">Attending</option>
+            <option value="hadir" >Attending</option>
             <option value="tidak_hadir">Won't be Attending</option>
           </select>
 

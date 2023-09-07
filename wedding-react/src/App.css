@@ -424,11 +424,11 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   .hero {
     width: 100vw;
     height: 400px;
-    background-image: url('https://images.unsplash.com/photo-1523974715800-1f7cef033969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-image: url('https://www.katebackdrop.com/cdn/shop/products/HJ04269.jpg?v=1640315021&width=600');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -480,4 +480,10 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  #buku_tamu form {
+    max-width: 80%;
+  }
+
+ 
 }
