@@ -1,6 +1,13 @@
 import "./App.css";
+import db from "./firebase";
+import { useEffect } from 'react';
+import { onSnapshot } from "firebase/firestore";
 
 function Guestbook () {
+  useEffect(() => {
+    onSnapshot(collection(db, "Name") ,() => {});
+  })
+
     return (
     <section id="buku_tamu">
       <div className="bingkai">
