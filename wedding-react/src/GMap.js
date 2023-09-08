@@ -12,7 +12,7 @@ function GMap () {
         <div className="line"></div>
       </div>
       <div className="section_wrap wrap">
-        <div className="section_container_map">
+        {/* <div className="section_container_map">
           <button className="map_list">
             <span className="material-symbols-outlined"> <FaLocationDot/> </span>
             Wedding Location
@@ -25,7 +25,7 @@ function GMap () {
             <span className="material-symbols-outlined"> <FaShareNodes/> </span>
             Share On Instagram
           </button>
-        </div>
+        </div> */}
         <section className="map_img">
           <iframe
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBe1nR0QEBBARewvYudV7Yww&key=AIzaSyBExIl5Az1PFZWB47BdeG2qQh_uDymbDYU"

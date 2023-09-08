@@ -473,8 +473,8 @@ footer p {
   #akad h1{
     font-size: 52px;
   }
- 
-  .section_wrap {
+
+  .section_wrap{
     /* max-width: 360px; */
     display: flex;
     flex-direction: column;
@@ -484,6 +484,49 @@ footer p {
   #buku_tamu form {
     max-width: 80%;
   }
+
+  #map h1 {
+  text-align: center;
+  font-size: 52px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+.section_container_map {
+  height: 350px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_img iframe {
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+  width: 120%;
+}
+
+.map_img {
+  flex: 1;
+  height: 350px;
+}
+
+.map_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 160px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.418);
+  animation: zoom 1s infinite alternate;
+}
 
  
 }
