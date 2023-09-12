@@ -7,8 +7,6 @@ import Reception from './Reception';
 import Guestbook from './Guestbook';
 import GMap from './GMap';
 import Footer from './Footer';
-import db from "./firebase";
-import { useEffect } from 'react';
 
 function App() {
   return (
