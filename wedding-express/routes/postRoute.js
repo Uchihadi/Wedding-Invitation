@@ -10,7 +10,13 @@ router.use(express.json());
 // })
 
 router.post('/success', (req,res) => {
-    const requestData = req.body;
+    let name = req.body.name;
+    let wishes = req.body.wishes;
+    let attendingValue = req.body.attendingValue;
+    console.log(req.body)
+    userservice.createuser(name, wishes, parseInt(attendingValue)).then(function (newUser){
+        res.json(newUser)
+    }).catch(err => next(err));
     res.send('POST Request Received!')
 });
 

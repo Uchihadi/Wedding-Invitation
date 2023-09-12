@@ -25,7 +25,7 @@ function Guestbook () {
     db.collection('weddings').add({
       name : name,
       wishes : wishes,
-      // attendingValue: attendingValue,
+      attendingValue: attendingValue
     })
     .then (() => {
       alert('Attendance have been submitted 😊');
