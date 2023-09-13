@@ -1,8 +1,6 @@
 import axios from "axios";
 import "./App.css";
-import db from "./firebase";
-import { useEffect, useState } from 'react';
-// import { onSnapshot, collection } from "firebase/firestore";
+import { useState } from 'react';
 
 function Guestbook() {
   const [name, setName] = useState("");
@@ -41,17 +39,7 @@ function Guestbook() {
     return e;
   }
 
-  setName('');
-  setWishes('');
-  setAttendingValue('');
 };
-
-
-// useEffect(() => 
-//   onSnapshot(collection(db, "wedding") ,(snapshot) => 
-//     setWedding(snapshot.docs.map((doc) => doc.data()))
-//   )
-// , []);
 
 return (
   <section id="buku_tamu">
