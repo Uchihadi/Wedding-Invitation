@@ -1,28 +1,17 @@
 const express = require('express');
+const userService = require('../services/userservice');
 const router = express.Router();
 // const port = 4000;
 
 // Set up Middleware to parse JSON data
 router.use(express.json());
 
-// router.get('/api/goals', (req, res) => {
-//     res.status(200).json({message: 'Get Goals'})
-// })
-
-router.post('/success', (req,res) => {
-    let name = req.body.name;
-    let wishes = req.body.wishes;
-    let attendingValue = req.body.attendingValue;
-    console.log(req.body)
-    userservice.createuser(name, wishes, parseInt(attendingValue)).then(function (newUser){
-        res.json(newUser)
-    }).catch(err => next(err));
-    res.send('POST Request Received!')
+router.post('/success', async (req,res) => {
+    let {name,email,wishes,attendingValue} = req.body;
+    console.log("this is from router")
+    let newUser = await userService.register(name, email, wishes, attendingValue);
+    res.status(200).send("success")
 });
 
-// Starting Server
-router.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
 
 module.exports = router;

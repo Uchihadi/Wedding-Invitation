@@ -1,22 +1,25 @@
 const { error } = require("console");
-const Mongoose = require("mongoose");
-Mongoose.Promise = global.Promise;
+const mongoose = require("mongoose");
 const url = "mongodb://localhost:27017/Wedding_DB"
 
-let userSchema = Schema({
+let userSchema = new mongoose.Schema({
     name: String,
+    email: String,
     wishes: String,
-    attendingValue: Number
+    attendingValue: Number,
 }, { collection: "User" })
 
-let collection = {};
+let dbModel = {};
 
-collection.getUserCollection = () => {
-    return Mongoose.connect(url, { useNewUrlParser: true }).then((database) => {
-        return database.model('User', userSchema)
-    }).catch((error) => {
-        let err = new Error("Could not connect to Database");
-        err.status = 500;
-        throw err;
-    })
+dbModel.getUser = async () => {
+    try {
+        mongoose.connect(url);
+        return mongoose.model("User", userSchema);
+    } catch (err) {
+        let error = new Error ("Cannot connect to DB");
+        error.status = 500;
+        throw error;
+    }
 }
+
+module.exports = dbModel
